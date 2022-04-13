@@ -15,7 +15,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP8K2dot5then2() {
+    public void whenP8K2dot5then3dot26() {
         double p = 8;
         double k = 2.5;
         double excepted = 3.26;
@@ -24,7 +24,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP4dot5K1dot5then2() {
+    public void whenP4dot5K1dot5then1dot21() {
         double p = 4.5;
         double k = 1.5;
         double excepted = 1.21;
