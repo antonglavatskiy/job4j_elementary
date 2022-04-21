@@ -31,4 +31,26 @@ public class FindLoopTest {
         int rsl = FindLoop.indexOf(data, element);
         Assert.assertEquals(expected, rsl);
     }
+
+    @Test
+    public void whenRangeHas14Then4() {
+        int[] data = {11, 3, 5, 23, 14, 32, 1, 7, 9, 4, 5};
+        int start = 2;
+        int finish = 6;
+        int element = 14;
+        int expected = 4;
+        int result = FindLoop.indexInRange(data, element, start, finish);
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenRangeHasNot2ThenMinus1() {
+        int[] data = {11, 3, 5, 23, 14, 32, 1, 7, 9, 4, 5};
+        int start = 1;
+        int finish = 3;
+        int element = 2;
+        int expected = -1;
+        int result = FindLoop.indexInRange(data, element, start, finish);
+        Assert.assertEquals(expected, result);
+    }
 }
