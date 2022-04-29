@@ -12,8 +12,8 @@ public class PointTest {
         int x2 = 2;
         int y2 = 0;
         double excepted = 2;
-        double rsl = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(excepted, rsl, 0.01);
+        double result = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(excepted, result, 0.01);
     }
 
     @Test
@@ -23,8 +23,8 @@ public class PointTest {
         int x2 = 1;
         int y2 = 0;
         double excepted = 5.09;
-        double rsl = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(excepted, rsl, 0.01);
+        double result = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(excepted, result, 0.01);
     }
 
     @Test
@@ -34,8 +34,8 @@ public class PointTest {
         int x2 = 7;
         int y2 = 8;
         double excepted = 5.65;
-        double rsl = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(excepted, rsl, 0.01);
+        double result = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(excepted, result, 0.01);
     }
 
     @Test
@@ -45,8 +45,8 @@ public class PointTest {
         int x2 = 0;
         int y2 = 8;
         double excepted = 6.32;
-        double rsl = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(excepted, rsl, 0.01);
+        double result = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(excepted, result, 0.01);
     }
 
     @Test
@@ -56,7 +56,7 @@ public class PointTest {
         int x2 = 3;
         int y2 = -9;
         double excepted = 8.24;
-        double rsl = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(excepted, rsl, 0.01);
+        double result = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(excepted, result, 0.01);
     }
 }

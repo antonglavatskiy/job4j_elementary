@@ -8,16 +8,16 @@ public class SwitchArray {
         return array;
     }
 
-    public static int[] swap(int[] array, int source, int dest) {
+    public static int[] swap(int[] array, int source, int destination) {
         int temp = array[source];
-        array[source] = array[dest];
-        array[dest] = temp;
+        array[source] = array[destination];
+        array[destination] = temp;
         return array;
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[] {1, 2, 3, 4, 5, 6};
-        int[] rsl = swapBorder(nums);
+        int[] numbers = new int[] {1, 2, 3, 4, 5, 6};
+        int[] rsl = swapBorder(numbers);
         for (int num : rsl) {
             System.out.println(num);
         }

@@ -10,8 +10,8 @@ public class TriangleTest {
         double ab = 2.0;
         double ac = 2.0;
         double bc = 2.0;
-        boolean rsl = Triangle.exist(ab, ac, bc);
-        Assert.assertTrue(rsl);
+        boolean result = Triangle.exist(ab, ac, bc);
+        Assert.assertTrue(result);
     }
 
     @Test
@@ -19,8 +19,8 @@ public class TriangleTest {
         double ab = 2.5;
         double ac = 5.0;
         double bc = 8.0;
-        boolean rsl = Triangle.exist(ab, ac, bc);
-        Assert.assertFalse(rsl);
+        boolean result = Triangle.exist(ab, ac, bc);
+        Assert.assertFalse(result);
     }
 
     @Test
@@ -28,8 +28,8 @@ public class TriangleTest {
         double ab = 22.5;
         double ac = 5.0;
         double bc = 8.0;
-        boolean rsl = Triangle.exist(ab, ac, bc);
-        Assert.assertFalse(rsl);
+        boolean result = Triangle.exist(ab, ac, bc);
+        Assert.assertFalse(result);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class TriangleTest {
         double ab = 2.5;
         double ac = 15.0;
         double bc = 8.0;
-        boolean rsl = Triangle.exist(ab, ac, bc);
-        Assert.assertFalse(rsl);
+        boolean result = Triangle.exist(ab, ac, bc);
+        Assert.assertFalse(result);
     }
 }
