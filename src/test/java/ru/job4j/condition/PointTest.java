@@ -49,4 +49,22 @@ public class PointTest {
         double result = pointA.distance(pointB);
         Assert.assertEquals(excepted, result, 0.01);
     }
+
+    @Test
+    public void when000to304then5() {
+        Point pointA = new Point(0, 0, 0);
+        Point pointB = new Point(3, 0, 4);
+        double excepted = 5;
+        double result = pointA.distance3D(pointB);
+        Assert.assertEquals(excepted, result, 0.01);
+    }
+
+    @Test
+    public void when523to218then5dot91() {
+        Point pointA = new Point(5, 2, 3);
+        Point pointB = new Point(2, 1, 8);
+        double excepted = 5.91;
+        double result = pointA.distance3D(pointB);
+        Assert.assertEquals(excepted, result, 0.01);
+    }
 }
